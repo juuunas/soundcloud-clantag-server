@@ -232,7 +232,7 @@ func getSCUserByID(id string) SCUser {
 
 func hasMessageWithIDAndOTP(id, otp string) bool {
 	url := "https://api-v2.soundcloud.com/users/1257683746/conversations/unread?limit=100&client_id=AADp6RRMinJzmrc26qh92jqzJOF69SwF"
-	headers := map[string]string{"Authorization": "OAuth "}
+	headers := map[string]string{"Authorization": "OAuth 2-296139-1257683746-olh6ubNsEjuIp"}
 
 	body, err := sendRequest("GET", url, headers)
 	if err != nil {
